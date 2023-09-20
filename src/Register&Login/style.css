@@ -22,6 +22,7 @@
 	border-radius: 10px;
 	box-shadow: 5px 20px 50px #000;
 	margin-top: 30px;
+	position: relative;
 }
 #chk{
 	display: none;
@@ -96,4 +97,14 @@ button:hover{
 }
 .error{
     color:wheat
+}
+.loader{
+position:absolute;
+top: 50%;
+left: 50%;
+z-index: 1;
+transform: translate(-50%, -50%);
+	
+	
+	
 }
