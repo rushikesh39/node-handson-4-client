@@ -1,9 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './NavBar.css'; 
 
 
 function NavBar() {
+  const navigate=useNavigate()
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    navigate("/login");
+  };
   return (
     <>
     <nav className="navbar">
@@ -23,13 +28,14 @@ function NavBar() {
             </Link>
           </li> */}
           <li className="nav-item">
-            <Link to="/dashboard" className="nav-link">
-             
+            <Link to="/login" className="nav-link">
+             Login
             </Link>
           </li>
+          
           <li className="nav-item">
-            <Link to="/login" className="nav-link">
-              Register/Login
+            <Link onClick={handleLogout} className="nav-link">
+              Logout
             </Link>
           </li>
         </ul>

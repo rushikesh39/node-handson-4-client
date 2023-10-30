@@ -1,5 +1,7 @@
 
 import './App.css';
+// import UserRoutes from './Handson4Practice/UserRoutes';
+
 import UserRoutes from './Routes/UserRoutes';
 
 function App() {
@@ -7,8 +9,7 @@ function App() {
     <div className="App">
     
    <UserRoutes/>
-      
-
+    {/* <UserRoutes/> */}
     </div>
   );
 }
