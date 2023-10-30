@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 import axios from "axios";
 import { useEffect } from "react";
 import jwtDecode from "jwt-decode";
